@@ -1,0 +1,35 @@
+.user_globe {
+  padding: 75px 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+  .col {
+    @media screen and (min-width: 1200px) {
+      flex: 50%;
+    }
+  }
+  .user_globe__text {
+    h3 {
+      font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      margin: 0 0 70px;
+      @media screen and (min-width: 1200px) {
+        margin: 15px 0 0;
+      }
+    }
+    p {
+      margin: 5px 0 0;
+      line-height: 24px;
+      letter-spacing: 0.7px;
+    }
+  }
+  .user_globe_img {
+    margin: 15px 0 0;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+}

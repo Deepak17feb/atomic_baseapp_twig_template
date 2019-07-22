@@ -1,0 +1,12 @@
+input,
+textarea {
+  background: $color-white;
+  border: 1px solid $grey-light;
+  border-radius: 3px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 105px;
+}

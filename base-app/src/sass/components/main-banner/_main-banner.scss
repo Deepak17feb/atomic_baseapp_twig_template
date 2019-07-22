@@ -1,0 +1,88 @@
+.main_banner {
+  background: url('../img/main-banner.jpg') no-repeat top center;
+  background-size: cover;
+
+  .container {
+    max-width: 600px;
+  }
+
+  .main_banner_content {
+    display: grid;
+    padding: 80px 0px 180px;
+    text-align: center;
+    grid-template-areas:
+      'grid-text'
+      'grid-services1' 'grid-services2' 'grid-services3';
+    @media screen and (min-width: 1200px) {
+      grid-template-areas:
+        'grid-text grid-text grid-text'
+        'grid-services1 grid-services2 grid-services3';
+      padding: 88px 0px 273px;
+    }
+
+    .service1 {
+      grid-area: grid-services1;
+    }
+    .service2 {
+      grid-area: grid-services2;
+    }
+    .service3 {
+      grid-area: grid-services3;
+    }
+
+    .main_banner_content__text {
+      grid-area: grid-text;
+      @media screen and (min-width: 1200px) {
+        padding: 0 35px;
+      }
+      h2 {
+        color: $color-white;
+        font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        display: inline-block;
+        @media screen and (min-width: 1200px) {
+          font-size: 38px;
+        }
+      }
+    }
+
+    .main_banner_content__services {
+      border: 1px solid rgba($color-white, 0.2);
+      border-radius: 3px;
+      color: $color-white;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 10px 0;
+      @media screen and (min-width: 1200px) {
+        width: 182px;
+        padding: 40px 0;
+        flex-direction: column;
+        margin: 0px 10px;
+        transition: all 0.3s ease;
+        &:hover {
+          box-shadow: 0px 0px 6px 0px $color-white;
+          transition: all 0.3s ease;
+        }
+      }
+      img {
+        max-width: 40px;
+        margin-right: 10px;
+        @media screen and (min-width: 1200px) {
+          max-width: none;
+          margin-left: 0;
+        }
+      }
+      span:last-child {
+        margin-top: 0;
+        @media screen and (min-width: 1200px) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

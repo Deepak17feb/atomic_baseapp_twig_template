@@ -1,0 +1,26 @@
+header {
+  background: $color-black;
+  padding: 10px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_logo {
+    padding: 8px 0;
+    // display: inline-block;
+  }
+
+  .menu_chat {
+    cursor: pointer;
+  }
+  .cta_btn {
+    display: inline-block;
+    padding: 5px 20px;
+    img {
+      padding-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

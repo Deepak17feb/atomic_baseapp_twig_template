@@ -1,0 +1,36 @@
+header {
+  .header_nav {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+    .header_nav_links {
+      display: inline-block;
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 25px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          color: $color-grey;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $color-white;
+            transition: all 0.3s ease;
+          }
+        }
+        &.active {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
